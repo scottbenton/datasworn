@@ -229,6 +229,9 @@ moves:
                 - using: condition_meter
                   condition_meter: supply
                 - using: asset_control
+                  assets:
+                    - asset:sundered_isles/command_vehicle/flagship
+                    - asset:sundered_isles/incidental_vehicle/sailing_ship
                   control: supply
         text: |-
           __When you travel a known route through perilous seas, across hazardous terrain, or within a mysterious site__, roll +supply.
@@ -488,6 +491,9 @@ moves:
               text: Gear up from your ship's stores
               roll_options:
                 - using: asset_control
+                  assets:
+                    - asset:sundered_isles/command_vehicle/flagship
+                    - asset:sundered_isles/incidental_vehicle/sailing_ship
                   control: supply
         text: |-
           __When you attempt to bolster your readiness__, envision the opportunity and your approach. If you...

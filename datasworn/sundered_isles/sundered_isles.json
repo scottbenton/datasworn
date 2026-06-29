@@ -68019,6 +68019,31 @@
 									"move:starforged/recover/repair"
 								]
 							}
+						},
+						"supply": {
+							"label": "supply (hold)",
+							"field_type": "condition_meter",
+							"rollable": true,
+							"min": 0,
+							"max": 5,
+							"value": 5,
+							"controls": {
+								"unequipped": {
+									"label": "unequipped (hold)",
+									"field_type": "checkbox",
+									"value": false,
+									"is_impact": true,
+									"disables_asset": false
+								}
+							},
+							"moves": {
+								"suffer": [
+									"move:starforged/suffer/sacrifice_resources"
+								],
+								"recover": [
+									"move:starforged/recover/resupply"
+								]
+							}
 						}
 					},
 					"_source": {
@@ -68683,7 +68708,10 @@
 									{
 										"using": "asset_control",
 										"control": "supply",
-										"assets": null
+										"assets": [
+											"asset:sundered_isles/command_vehicle/flagship",
+											"asset:sundered_isles/incidental_vehicle/sailing_ship"
+										]
 									}
 								]
 							}
@@ -69083,7 +69111,10 @@
 									{
 										"using": "asset_control",
 										"control": "supply",
-										"assets": null
+										"assets": [
+											"asset:sundered_isles/command_vehicle/flagship",
+											"asset:sundered_isles/incidental_vehicle/sailing_ship"
+										]
 									}
 								],
 								"text": "Gear up from your ship's stores"

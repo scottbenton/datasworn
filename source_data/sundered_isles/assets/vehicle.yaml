@@ -317,3 +317,18 @@ assets:
                 - move:starforged/suffer/withstand_damage
               recover:
                 - move:starforged/recover/repair
+          supply:
+            label: supply (hold)
+            field_type: condition_meter
+            max: 5
+            value: 5
+            moves:
+              suffer:
+                - move:starforged/suffer/sacrifice_resources
+              recover:
+                - move:starforged/recover/resupply
+            controls:
+              unequipped:
+                field_type: checkbox
+                label: unequipped (hold)
+                is_impact: true
